@@ -5,4 +5,7 @@
 - starfruit
 - and fresh fruit
 - pineapple
-- updated by ssn
+- lemon
+- strawberry
+- blueberry
+- watermelon
