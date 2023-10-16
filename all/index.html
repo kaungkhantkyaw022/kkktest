@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For all</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            background-color: blueviolet;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1>This page is for all</h1>
     <hr>
-        <h1>This is a heading</h1>
-        <p>This is a paragraph.</p>
-        <p>This is my messsage</p>
+        <h1 class="hh">This is a heading</h1>
+        <p id="pp">This is a paragraph.</p>
+        <p class="hh">This is my messsage</p> 
         
+        <input type="checkbox" name="Hello" id="color" checked> Hello
+        <hr>
+        <button id="btn_click">Click Me</button>
+    <script>
+        console.log("Hello");
+        let btn_click = document.getElementById("btn_click");
+        let pp = document.getElementById("pp");
+
+        btn_click.addEventListener("click", btn_click_fun);
+        btn_click.addEventListener("mouseover", btn_mouseover_fun);
+        
+        
+        function btn_click_fun(){
+            pp.innerText = "Hello";
+        }
+        function btn_mouseover_fun(){
+            btn_click.style.background = "red";
+        }
+    </script>
 </body>
 </html>
